@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#303B3B">
+
+    <title>MeasureMate | Your Sewing Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <a class="brand" href="#home">
+            <img src="measuremate-logo.jpg" alt="MeasureMate Logo">
+            <span>
+                MeasureMate
+                <small>Your sewing companion</small>
+            </span>
+        </a>
+
+        <p class="nav-label">WORKSPACE</p>
+
+        <nav class="main-nav">
+            <a class="nav-link active" href="#home">⌂ Overview</a>
+            <a class="nav-link" href="#measurement-section">⌁ Measurements</a>
+            <a class="nav-link" href="#project-section">✂ My projects</a>
+            <a class="nav-link" href="#tools-section">▦ Sewing tools</a>
+            <a class="nav-link" href="#size-guide-section">▤ Size guide</a>
+            <a class="nav-link" href="#guides-section">♡ Visual guides</a>
+        </nav>
+
+        <div class="sidebar-note">
+            <span class="note-icon">✦</span>
+            <strong>Little by little</strong>
+            <p>Every stitch brings your ideas to life. Keep creating!</p>
+        </div>
+
+        <div class="sidebar-footer">
+            MEASURE. CREATE. PERFECT.
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="home">
+
+        <header class="topbar">
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="sidebar">
+                ☰
+            </button>
+
+            <div class="breadcrumb">
+                Workspace <span>/</span> Overview
+            </div>
+
+            <div class="topbar-right">
+                <span class="status-dot"></span>
+                Ready when you are
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome">
+
+            <div class="welcome-content">
+
+                <p class="eyebrow">YOUR CREATIVE SPACE</p>
+
+                <h1>
+                    Make room for
+                    <em>your next creation.</em>
+                </h1>
+
+                <p class="welcome-copy">
+                    Keep your measurements organised, plan your sewing
+                    projects and enjoy the process — one stitch at a time.
+                </p>
+
+                <a href="#measurement-section" class="primary-button">
+                    Explore your workspace <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="welcome-art" aria-hidden="true">
+                <div class="art-circle"></div>
+                <div class="thread">〰</div>
+
+                <div class="art-label">
+                    A little more<br>
+                    <strong>made by you.</strong>
+                </div>
+
+                <div class="art-stitch">✳</div>
+            </div>
+
+        </section>
+
+
+        <!-- TOOLKIT -->
+        <section class="section-heading" id="tools-section">
+
+            <div>
+                <p class="eyebrow">START HERE</p>
+                <h2>Your sewing toolkit</h2>
+            </div>
+
+            <p class="section-hint">
+                Choose a tool to get started
+            </p>
+
+        </section>
+
+
+        <section class="tool-grid">
+
+            <a class="tool-card" href="#measurement-section">
+                <span class="tool-icon mint">⌁</span>
+                <span class="card-arrow">↗</span>
+
+                <h3>Measurement Tracker</h3>
+
+                <p>
+                    Keep body and client measurements together
+                    in one handy place.
+                </p>
+
+                <span class="card-link">
+                    Open tracker →
+                </span>
+            </a>
+
+
+            <a class="tool-card" href="#converter-panel">
+                <span class="tool-icon peach">⇄</span>
+                <span class="card-arrow">↗</span>
+
+                <h3>Unit Converter</h3>
+
+                <p>
+                    Switch between centimetres and inches
+                    without the mental maths.
+                </p>
+
+                <span class="card-link">
+                    Convert units →
+                </span>
+            </a>
+
+
+            <a class="tool-card" href="#project-section">
+                <span class="tool-icon lavender">✂</span>
+                <span class="card-arrow">↗</span>
+
+                <h3>Project Planner</h3>
+
+                <p>
+                    Keep track of ideas, materials and the
+                    next steps for each project.
+                </p>
+
+                <span class="card-link">
+                    Plan a project →
+                </span>
+            </a>
+
+
+            <a class="tool-card" href="#size-guide-section">
+                <span class="tool-icon butter">▤</span>
+                <span class="card-arrow">↗</span>
+
+                <h3>Pattern Size Guide</h3>
+
+                <p>
+                    Compare measurements with a pattern's
+                    sizing information.
+                </p>
+
+                <span class="card-link">
+                    View size guide →
+                </span>
+            </a>
+
+        </section>
+
+
+        <!-- LOWER DASHBOARD -->
+        <section class="lower-grid">
+
+            <!-- MEASUREMENT BOOK -->
+            <div class="panel" id="measurement-section">
+
+                <div class="panel-heading">
+
+                    <div>
+                        <p class="eyebrow">KEEP IT CLOSE</p>
+                        <h2>Your measurement book</h2>
+                    </div>
+
+                    <span class="panel-symbol">✎</span>
+
+                </div>
+
+                <div class="empty-state">
+
+                    <div class="empty-illustration">＋</div>
+
+                    <div>
+                        <strong>Your measurement book is ready</strong>
+
+                        <p>
+                            Your digital measurement diary will help
+                            you keep client records organised and
+                            retrieve them whenever you need them.
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="text-button" data-message="The full measurement tracker is coming in the next development stage.">
+                    Explore measurements →
+                </button>
+
+            </div>
+
+
+            <!-- CONVERTER -->
+            <div class="panel converter-panel" id="converter-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+                        <p class="eyebrow">QUICK CALCULATION</p>
+                        <h2>Length converter</h2>
+                    </div>
+
+                    <span class="panel-symbol">⇄</span>
+
+                </div>
+
+                <label for="lengthValue">
+                    Enter a measurement
+                </label>
+
+                <div class="converter-input">
+
+                    <input
+                        type="number"
+                        id="lengthValue"
+                        min="0"
+                        step="any"
+                        placeholder="e.g. 25"
+                        value="25"
+                    >
+
+                    <select id="unitFrom" aria-label="Starting unit">
+                        <option value="cm">Centimetres</option>
+                        <option value="in">Inches</option>
+                    </select>
+
+                </div>
+
+                <button class="convert-button" id="convertButton">
+                    Convert measurement
+                </button>
+
+                <div class="conversion-result" aria-live="polite">
+
+                    <span id="resultLabel">25 cm equals</span>
+
+                    <strong id="conversionResult">
+                        9.84 inches
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT PLANNER (PLACEHOLDER) -->
+        <section class="coming-soon" id="project-section">
+
+            <div class="coming-icon">✂</div>
+
+            <div>
+                <p class="eyebrow">PLAN AHEAD</p>
+
+                <h2>Sewing project planner</h2>
+
+                <p>
+                    Organise projects, materials, deadlines, client
+                    information and progress in one place.
+                </p>
+            </div>
+
+            <span class="coming-tag">IN THE MAKING</span>
+
+        </section>
+
+
+        <!-- PATTERN SIZE GUIDE (PLACEHOLDER) -->
+        <section class="coming-soon" id="size-guide-section">
+
+            <div class="coming-icon">▤</div>
+
+            <div>
+                <p class="eyebrow">FIND YOUR FIT</p>
+
+                <h2>Pattern size guide</h2>
+
+                <p>
+                    Compare body measurements with pattern size charts
+                    to help choose the right size.
+                </p>
+            </div>
+
+            <span class="coming-tag">COMING SOON</span>
+
+        </section>
+
+
+        <!-- ROADMAP -->
+        <section class="coming-soon" id="roadmap-section">
+
+            <div class="coming-icon">✦</div>
+
+            <div>
+                <p class="eyebrow">COMING TO YOUR WORKSPACE</p>
+
+                <h2>More room to create</h2>
+
+                <p>
+                    Fabric estimates, seam allowance calculations
+                    and more are on the roadmap.
+                </p>
+            </div>
+
+            <span class="coming-tag">IN THE MAKING</span>
+
+        </section>
+
+
+        <section class="coming-soon guides-section" id="guides-section">
+
+            <div class="coming-icon">♡</div>
+
+            <div>
+                <p class="eyebrow">LEARN AS YOU CREATE</p>
+
+                <h2>Visual sewing guides</h2>
+
+                <p>
+                    Helpful visual references for taking measurements
+                    and learning common sewing techniques.
+                </p>
+            </div>
+
+            <span class="coming-tag">COMING SOON</span>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <span>MeasureMate</span>
+
+            <span>
+                Made for the love of making.
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- NOTIFICATION -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
